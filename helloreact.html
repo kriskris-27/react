@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React and ReactDOM libraries from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel to enable JSX in the browser -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Your React code -->
+    <script type="text/babel">
+      // React component
+      function Greeting() {
+        const [name, setName] = React.useState("World");
+
+        return (
+          <div>
+            <h1>Hello, {name}!</h1>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your name"
+            />
+          </div>
+        );
+      }
+
+      // Render the Greeting component into the DOM
+      const rootElement = document.getElementById('root');
+      ReactDOM.createRoot(rootElement).render(<Greeting />);
+    </script>
+  </body>
+</html>
