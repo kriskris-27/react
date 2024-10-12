@@ -1,3 +1,3 @@
 function Greeting(){
-    return <h1>&quot i swear&quot</h1>
+    return <h1>&quot i swear&quo</h1>
 }
