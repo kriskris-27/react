@@ -31,7 +31,7 @@ header p{
 }
 
 #tabs {
-    max-width: 32 rem;
+    max-width: 32rem;
     margin: 2rem 0;
     overflow: hidden;
 }
@@ -57,6 +57,10 @@ header p{
   }
 
   #tabs button:hover,#tabs button:active{
+    background-color: #f3e248;
+    color: #273133;
+  }
+  #tabs button.active {
     background-color: #f3e248;
     color: #273133;
   }
