@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:  'Noto Sans', sans-serif;
+    height: 100vh;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 3% 2%;
+    height: 90px;
+    background-color: rgb(33,34,42);
+}
+.react-logo{
+    width: 40px;
+    margin-right: 7px;
+}
+.react-fact,.react-proj{
+    margin :0;   
+}
+.react-fact{
+    margin-right: auto;
+    color: #61DAFB;
+    font-size: 22px;
+}
+.react-proj{
+    color: white;
+}
+
+.main{
+    background-color: #282D35;
+    height:100vh;
+    padding: 57px 27px;
+    color: white;
+}
+
+.main-head{
+    font-size: 39;
+    margin: 0;
+    letter-spacing: -0.05em;
+}
+
+.main-fact{
+    margin: 8%;
+}
+
+.main-fact>li{
+    line-height: 19px;
+    padding-block: 10px;
+}
+.main-fact >li::marker{
+    font-size: 1.5rem;
+    color:#61DAFB;
+}
