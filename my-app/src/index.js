@@ -1,23 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-
-
-function TemporaryName() {
-  return (
-    <div>
-    <img src="image.png" width="40px"/>
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first releasead in 2013</li>
-      <li>Was first releasead in 2013</li>  
-      <li>Was first releasead in 2013</li>
-      <li>Is maintaied by FaceBook
-
-      </li>
-    </ul>
-  </div>
+function IlikeinReact() 
+{
+  return(
+    <>
+    <header>
+      <nav>
+        <img src="image.png" width="50px"/>
+      </nav>
+    </header>
+    <h1>I like React because</h1>
+    <ol>
+      <li>i like components</li>
+      <li>i like imperative</li>
+      <li>I like reusability</li>
+    </ol>
+    <foorter>
+      <small>© 2024 kris development. All rights reserved.</small>
+    </foorter>
+    </>
   )
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<TemporaryName/>);
+ReactDOM.createRoot(document.getElementById("root")).render(<IlikeinReact/>)
